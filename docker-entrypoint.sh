@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if [ "$1" = 'php-fpm' ]; then
-  if [ -e fpmstart-before.sh ]; then
-    /usr/bin/env bash fpmstart-before.sh
+  if [ -e fpm-before.sh ]; then
+    /usr/bin/env bash fpm-before.sh
   fi
   exec "$@"
 else
